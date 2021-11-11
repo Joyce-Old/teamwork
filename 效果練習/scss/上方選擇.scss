@@ -39,6 +39,16 @@ main {
     width: 100%;
     height: 800px;
 
+    .fixed-img{
+        img{
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 2;
+        }
+    }
+
     img {
         width: 100%;
         height: 100vh;
