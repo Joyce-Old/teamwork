@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top: 0;
+    min-height: 700px;
+
+    .card {
+        min-width: 300px;
+        min-height: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4ch;
+        background-color: blanchedalmond;
+        border: 1px solid black;
+        margin: 10px;
+
+        &:nth-child(1) {
+            min-width: 500px;
+        }
+
+        &:nth-child(even) {
+            background-color: teal;
+            color: white;
+            margin-top: 50px;
+        }
+
+    }
+}
