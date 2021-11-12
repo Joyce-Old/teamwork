@@ -57,7 +57,6 @@ main {
   .title h1 {
     color: royalblue;
     overflow: hidden;
-    /* Same as before */
     background: -webkit-gradient(linear, left top, right top, from(midnightblue), color-stop(50%, midnightblue), color-stop(50%, royalblue));
     background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
     background-clip: text;

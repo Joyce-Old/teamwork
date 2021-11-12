@@ -1,0 +1,38 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.wave3 {
+  width: 100vw; }
+  .wave3 svg {
+    width: 100%; }
+  .wave3 .wave {
+    -webkit-animation: wave 3s linear;
+            animation: wave 3s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    fill: #4478e3; }
+  .wave3 #wave2 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6; }
+  .wave3 #wave3 {
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    opacity: 0.3; }
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+@keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+/*# sourceMappingURL=wave3.css.map */

@@ -17,7 +17,6 @@ main {
 .box {
     width: 100%;
     height: 800px;
-    // background-color: red;
     position: fixed;
 }
 
@@ -41,11 +40,12 @@ main {
 
     .fixed-img{
         img{
-            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            // clip-path: polygon(0 0, 0% 100%, 100% 100%);
             width: 100%;
             height: 100vh;
             position: fixed;
             z-index: 2;
+            mask: linear-gradient(45deg, #000 30%, transparent 50%);
         }
     }
 
@@ -66,23 +66,23 @@ main {
     z-index: 10;
 
     h1 {
-        position: relative;
-        display: inline-block;
-        font-size: 2em;
-        font-weight: 800;
+        // position: relative;
+        // display: inline-block;
+        // font-size: 2em;
+        // font-weight: 800;
         color: royalblue;
         overflow: hidden;
         /* Same as before */
-        background: linear-gradient(to bottom, midnightblue, midnightblue 50%, royalblue 50%);
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-size: 100% 200%;
-        background-position: 0 100%;
+        background-size: 200% 100%;
+        background-position: 100%;
         transition: background-position 275ms ease;
 
         &:hover {
-            background-position: 100% 0;
+            background-position: 0 100%;
         }
     }
 }
