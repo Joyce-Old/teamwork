@@ -35,8 +35,8 @@ main {
     height: 100vh;
     position: fixed;
     z-index: 2;
-    -webkit-mask: linear-gradient(45deg, #000 30%, transparent 50%);
-            mask: linear-gradient(45deg, #000 30%, transparent 50%); }
+    -webkit-mask: linear-gradient(25deg, #000 40%, transparent 50%);
+            mask: linear-gradient(25deg, #000 40%, transparent 50%); }
   #home-view img {
     width: 100%;
     height: 100vh;
