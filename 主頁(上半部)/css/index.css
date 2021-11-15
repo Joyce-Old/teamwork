@@ -105,7 +105,9 @@ section {
     border-radius: 50%;
     position: absolute; }
     #section2 .time-circle .circle:nth-child(1) {
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75);
+              box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75); }
     #section2 .time-circle .circle .time {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -155,7 +157,9 @@ section {
               transform: rotate(-40deg); }
 
 #section2 .choose {
-  background-color: #0A64FF !important; }
+  background-color: #0A64FF !important;
+  -webkit-box-shadow: 0px 0px 5px #A7B6EA;
+          box-shadow: 0px 0px 5px #A7B6EA; }
 
 #section2 .choosespan {
   font-size: 24px !important; }
@@ -240,12 +244,14 @@ section {
   height: 275px;
   position: absolute;
   right: 92px;
-  top: 706px;
+  bottom: 99px;
   z-index: 4;
   background-color: rgba(199, 223, 255, 0.8);
   font-size: 24px;
   border-radius: 30.182px;
-  display: none; }
+  display: none;
+  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5); }
 
 #section2 .show {
   display: -webkit-box;
