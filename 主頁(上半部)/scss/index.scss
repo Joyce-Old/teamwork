@@ -70,6 +70,7 @@ section {
     background-image: url(../圖片/section1/banner.png);
     background-size: cover;
     background-position: center;
+
     .bali-big {
         font-size: 287.1316px;
         font-family: "Bauhaus 93";
@@ -130,6 +131,7 @@ section {
 
             &:nth-child(1) {
                 background-color: rgba($white, 0.5);
+                box-shadow: 0px 0px 30px rgba(#3BA1DC, 0.75);
             }
 
             .time {
@@ -195,6 +197,7 @@ section {
 
     .choose {
         background-color: $choose !important;
+        box-shadow: 0px 0px 5px #A7B6EA;
     }
 
     .choosespan {
@@ -267,26 +270,31 @@ section {
         transform: rotate(80deg) !important;
         transition-duration: 1s;
     }
-    .description{
+
+    .description {
         width: 1186px;
         height: 275px;
         position: absolute;
         right: 92px;
-        top: 706px;
+        bottom: 99px;
         z-index: 4;
         background-color: rgba($blue, 0.8);
         font-size: 24px;
         border-radius: 30.182px;
         display: none;
-        
+        box-shadow: 7px 7px 5px rgba(black, 0.5);
+        // Ai檔不透明度是0.75，可是用0.5看起來比較像
+
     }
-    .show{
+
+    .show {
         display: flex;
         align-items: center;
         justify-content: center;
         line-height: 36px;
-        text-align:center;
+        text-align: center;
     }
+
     img {
         position: absolute;
         width: 100%;
