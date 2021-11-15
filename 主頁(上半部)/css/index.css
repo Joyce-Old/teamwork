@@ -5,11 +5,12 @@
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   overflow-x: hidden; }
 
 header {
   width: 100%;
+  max-width: 1920px;
   height: 75px;
   background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#C7DFFF));
   background-image: linear-gradient(to right, #fff, #C7DFFF);
@@ -27,7 +28,7 @@ header {
     header .logo img {
       height: 65px; }
   header nav {
-    margin-right: 285px; }
+    margin-right: 280.5px; }
     header nav ul {
       margin: 0;
       padding: 0;
@@ -45,38 +46,41 @@ header {
 
 section {
   width: 100%;
+  max-width: 1920px;
   height: 100vh;
   position: relative; }
 
-#section1 .bali-big {
-  font-size: 287.1316px;
-  font-family: "Bauhaus 93";
-  color: #EB3796;
-  position: absolute;
-  left: 88px;
-  bottom: 165px;
-  z-index: 1; }
-
-#section1 .banner-text {
-  font-size: 48px;
-  position: absolute;
-  right: 23px;
-  bottom: 26.5px;
-  z-index: 1;
-  font-family: "Hanyi Senty Journal Regular"; }
-
-#section1 .wave3 {
-  width: 100vw;
-  position: absolute;
-  bottom: -5px; }
-  #section1 .wave3 svg {
-    width: 100%; }
-  #section1 .wave3 .wave {
-    -webkit-animation: wave 3s linear;
-            animation: wave 3s linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    fill: url(#lineGradient); }
+#section1 {
+  background-image: url(../圖片/section1/banner.png);
+  background-size: cover;
+  background-position: center; }
+  #section1 .bali-big {
+    font-size: 287.1316px;
+    font-family: "Bauhaus 93";
+    color: #EB3796;
+    position: absolute;
+    left: 89px;
+    bottom: 163px;
+    z-index: 1; }
+  #section1 .banner-text {
+    font-size: 48px;
+    position: absolute;
+    right: 23px;
+    bottom: 26.5px;
+    z-index: 1;
+    font-family: "Hanyi Senty Journal Regular"; }
+  #section1 .wave3 {
+    width: 100vw;
+    position: absolute;
+    bottom: -5px; }
+    #section1 .wave3 svg {
+      width: 100%; }
+    #section1 .wave3 .wave {
+      -webkit-animation: wave 3s linear;
+              animation: wave 3s linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      fill: url(#lineGradient); }
 
 @-webkit-keyframes wave {
   to {
@@ -257,7 +261,8 @@ section {
   text-align: center; }
 
 #section2 img {
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 #section2 .fixed-img img {
   z-index: 2; }

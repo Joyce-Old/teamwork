@@ -10,12 +10,14 @@ $choose: #0A64FF;
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     overflow-x: hidden;
 }
 
 header {
     width: 100%;
+    max-width: 1920px;
+
     height: 75px;
     background-image: linear-gradient(to right, $white, $blue);
     display: flex;
@@ -34,7 +36,7 @@ header {
     }
 
     nav {
-        margin-right: 285px;
+        margin-right: 280.5px;
 
         ul {
             margin: 0;
@@ -59,18 +61,22 @@ header {
 
 section {
     width: 100%;
+    max-width: 1920px;
     height: 100vh;
     position: relative;
 }
 
 #section1 {
+    background-image: url(../圖片/section1/banner.png);
+    background-size: cover;
+    background-position: center;
     .bali-big {
         font-size: 287.1316px;
         font-family: "Bauhaus 93";
         color: $pink;
         position: absolute;
-        left: 88px;
-        bottom: 165px;
+        left: 89px;
+        bottom: 163px;
         z-index: 1;
     }
 
@@ -283,6 +289,7 @@ section {
     }
     img {
         position: absolute;
+        width: 100%;
     }
 
     .fixed-img img {
