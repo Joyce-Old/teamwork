@@ -2,21 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主頁</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主頁</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <section id = "section1"></section>
-        <section id = "section2"></section>
-        <section id = "section3"></section>
-        <section id = "section4"></section>
-    </main>
-    <footer></footer>
+  <header></header>
+  <main>
+    <section id="section1"></section>
+    <section id="section2"></section>
+    <section id="section3">
+      <div class="sticky-container">
+        <div class="gallery">
+          <div class="card">
+          </div>
+          <div class="card">
+            <h1>1</h1>
+          </div>
+          <div class="card">
+            <h1>2</h1>
+          </div>
+          <div class="card">
+            <h1>3</h1>
+          </div>
+          <div class="card">
+            <h1>4</h1>
+          </div>
+          <div class="card">
+            <h1>5</h1>
+          </div>
+          <div class="card">
+            <h1>6</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section4">
+      <div id="publicTransport">
+        <div id="publicTransportImg">
+          <img src="./圖片/section4/bus.png" alt="">
+        </div>
+        <div id="publicTransportArea">
+          <div id="transportationTitle">
+            <span>公共運輸</span>
+          </div>
+          <div id="transportationContent">
+            <div id="transportationContentLeft">
+              <div>
+                <span>捷運</span>
+                <span>路線:搭乘捷運淡水信義線至關渡站</span>
+              </div>
+              <div>
+                <span>公車</span>
+                <span>車號:紅22</span>
+                <span>發車間距:每12-20分鐘發一班車</span>
+                <span>平日發車時間:頭班車:0530，末班車:2330</span>
+                <span>假日發車時間:頭班車:0545，末班車:2330</span>
+                <span>車號:紅13</span>
+                <span>發車間距:每12-20分鐘發一班車</span>
+                <span>平日發車時間:頭班車:0625，末班車:2100</span>
+                <span>假日發車時間:頭班車:0752，末班車:2110</span>
+              </div>
+            </div>
+            <div id="transportationContentRight">
+              <span>渡船</span>
+              <span>價格:單程全票23元、半票12元</span>
+              <span>航班:周一~周五: 7:00~20:00</span>
+              <span>全年無休(10~15分/班)</span>
+              <span>週六~周日: 7:00~21:00</span>
+              <span>全年無休(3~5分/班)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="carAndBicycle">
+        <div id="car">
+          <div id="carArea">
+            <div id="carTitle">
+              <span>自行開車</span>
+            </div>
+            <div id="carContent">
+              <span>路線1:</span>
+              <span>臺北→關渡大橋→龍形路→龍米路→八里渡船頭老街</span>
+              <span>路線2:</span>
+              <span>中山高速公路→林口交流道→105線道→八里 </span>
+            </div>
+          </div>
+          <div id="carImg">
+            <img src="./圖片/section4/car.png" alt="">
+          </div>
+        </div>
+        <div id="bicycle">
+          <div id="bicycleImg">
+            <img src="./圖片/section4/bus.png" alt="">
+          </div>
+          <div id="bicycleArea">
+            <div id="bicycleTitle">
+              <span>腳踏車</span>
+            </div>
+            <div id="bicycleContent">
+              <div id="bicycleContentUp">
+                <span>租借店家:八里租借站</span>
+                <span>租借時間:</span>
+                <span>11月~3月(冬令)</span>
+                <span>平 日(星期一至星期五): 9:00~12:00，13:00~17:00</span>
+                <span>假 日(周末及國定假日): 8:00~18:00</span>
+              </div>
+              <div id="bicycleContentDw">
+                <span>4月~10月(夏令)</span>
+                <span>平 日(星期一至星期五): 9:00~12:00，14:00~19:00</span>
+                <span>假 日(周末及國定假日): 8:00~19:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+
+
+
+
+
+
+
+  <script>
+
+    //section景點效果js
+    (function () {
+      init();
+
+      var g_containerInViewport;
+      function init() {
+        setStickyContainersSize();
+        bindEvents();
+      }
+
+      function bindEvents() {
+        window.addEventListener("wheel", wheelHandler);
+      }
+
+      function setStickyContainersSize() {
+        document.querySelectorAll('.sticky-container').forEach(function (container) {
+          const stikyContainerHeight = (container.querySelector('.gallery').offsetWidth + window.innerHeight);
+          container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+        });
+      }
+
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+      }
+
+      function wheelHandler(evt) {
+
+        const containerInViewPort = Array.from(document.querySelectorAll('.sticky-container')).filter(function (container) {
+          return isElementInViewport(container);
+        })[0];
+
+        if (!containerInViewPort) {
+          return;
+        }
+
+        var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
+        var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
+        let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+        if (g_canScrollHorizontally) {
+          containerInViewPort.querySelector('.gallery').scrollLeft += evt.deltaY;
+        }
+      }
+    })();
+  </script>
 </body>
 
 </html>
