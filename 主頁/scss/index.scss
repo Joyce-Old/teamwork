@@ -7,6 +7,7 @@ $choose: #0A64FF;
 *{
     box-sizing: border-box;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -67,7 +68,7 @@ header {
 section {
     width: 100%;
     max-width: 1920px;
-    height: 100vh;
+    height: 1080px;
     position: relative;
 }
 
@@ -311,45 +312,72 @@ section {
 
 
 #section3{
-    max-width: 1920px;
-    background-image: url(../圖片/section3/grass.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    .sticky-container{
-        // padding: 0px 311px;
-        
-        .gallery {
-            padding-top: 66px;
-            overflow: hidden;
-            display: flex;
-            position: sticky;
-            top: 0;
-            min-height: 700px;
-    
-            .card {
-                min-width: 305px;
-                height: 520px;
-                width: 305px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 4ch;
-                background-color: blanchedalmond;
-                margin: 0px 12.5px;
-    
-                &:nth-child(1) {
-                    min-width: 500px;
-                    opacity: 0;
-                }
-    
-                &:nth-child(even) {
-                    background-color: teal;
-                    color: white;
-                    margin-top: 50px;
-                }
-            }
+    background-image: url(../圖片/section3/section-2-背景.png);
+    background-size: cover;
+    #section3CardArea{
+        overflow-x: hidden;
+        display: flex;
+        width: 100%;
+        padding-top: 66px;
+
+        #section3Cards {
+        min-width: 316.5px;
+        height: 750px;
+        // background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        }
+
+        #section3Cards:nth-child(even) {
+            // background-color: teal;
+            color: white;
+            padding-top: 226px;
+        }
+        #section3Cards:nth-child(1) {
+            min-width: 300px;
+            height: 750px;
+        }#section3Cards:nth-last-child(1) {
+            min-width: 700px;
+            height: 750px;
+        }
+        #section3Card{
+            width: 304px;
+            height: 502px;
+            border-radius: 25px;
+            background-color: cornsilk;
         }
     }
+    // width: 100%;
+    // overflow: -moz-hidden-unscrollable;
+    // background-color: burlywood;
+
+    // div::-webkit-scrollbar {
+    //     display: none;
+    // }
+
+    // div {
+    //     -ms-overflow-style: none;
+    //     height: 100%;
+    //     width: calc(100vw + 18px);
+    //     overflow: auto;
+    // }
+
+    // .horizontal-scroll-wrapper {
+    //     width: 700px; //控制與父件的高度
+    //     height: 1920px;
+    //     overflow-y: auto;
+    //     overflow-x: hidden;
+    //     transform-origin: right top;
+    //     transform: rotate(-90deg) translateY(-700px);
+    // }
+
+    // .horizontal-scroll-wrapper>div {
+    //     width: 400px;  //控制上下寬
+    //     height: 300px; //控制左右距離
+    //     background-color: blue;
+    //     transform: rotate(90deg);
+    //     transform-origin: right top;
+    // }
 }
 
 #section4{
@@ -530,4 +558,62 @@ section {
 
 
 
+}
+
+footer{
+    .wave3 {
+        width: 1920px;
+        overflow: hidden;
+        position: absolute;
+        bottom: -5px;
+
+        svg {
+            width: 150%;
+        }
+
+        .wave {
+            animation: wave 3s linear;
+            animation-iteration-count: infinite;
+            fill: url(#lineGradient);
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    // .wave3 {
+    //     width: 100vw;
+    //     // position: fixed;
+    //     // bottom:0px; 
+      
+    //     svg {
+    //       width: 100%;
+    //     }
+      
+    //     .wave {
+    //       animation: wave 3s linear;
+    //       animation-iteration-count: infinite;
+    //       fill: #4478e3;
+      
+    //     }
+    //     #wave2 {
+    //       animation-duration: 5s;
+    //       animation-direction: reverse;
+    //       opacity: 0.6;
+    //     }
+      
+    //     #wave3 {
+    //       animation-duration: 7s;
+    //       opacity: 0.3;
+    //     }
+    //     @keyframes wave {
+    //       to {
+    //         transform: translateX(-100%);
+    //       }
+    //     }
+      
+    //   }
 }

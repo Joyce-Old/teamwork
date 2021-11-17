@@ -129,7 +129,6 @@ section {
   z-index: 3;
   position: absolute;
   left: -246.5px;
-<<<<<<< HEAD
   top: calc(50% - 246.5px);
 }
 
@@ -142,6 +141,8 @@ section {
 
 #section2 .time-circle .circle:nth-child(1) {
   background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75);
+          box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75);
 }
 
 #section2 .time-circle .circle .time {
@@ -215,71 +216,9 @@ section {
 
 #section2 .choose {
   background-color: #0A64FF !important;
-}
-=======
-  top: calc(50% - 246.5px); }
-  #section2 .time-circle .circle {
-    width: 493px;
-    height: 493px;
-    border-radius: 50%;
-    position: absolute; }
-    #section2 .time-circle .circle:nth-child(1) {
-      background-color: rgba(255, 255, 255, 0.5);
-      -webkit-box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75);
-              box-shadow: 0px 0px 30px rgba(59, 161, 220, 0.75); }
-    #section2 .time-circle .circle .time {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-      #section2 .time-circle .circle .time .point {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: #55F7FF; }
-        #section2 .time-circle .circle .time .point span {
-          width: 250px;
-          display: inline-block;
-          color: #fff;
-          margin-left: 25px;
-          font-family: 微軟正黑體;
-          line-height: 18px;
-          font-weight: bold;
-          font-size: 18px; }
-  #section2 .time-circle .circle-1 {
-    -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg); }
-    #section2 .time-circle .circle-1 .point {
-      -webkit-transform: rotate(40deg);
-              transform: rotate(40deg); }
-  #section2 .time-circle .circle-2 {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg); }
-    #section2 .time-circle .circle-2 .point {
-      -webkit-transform: rotate(20deg);
-              transform: rotate(20deg); }
-  #section2 .time-circle .circle-4 {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-    #section2 .time-circle .circle-4 .point {
-      -webkit-transform: rotate(-20deg);
-              transform: rotate(-20deg); }
-  #section2 .time-circle .circle-5 {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg); }
-    #section2 .time-circle .circle-5 .point {
-      -webkit-transform: rotate(-40deg);
-              transform: rotate(-40deg); }
-
-#section2 .choose {
-  background-color: #0A64FF !important;
   -webkit-box-shadow: 0px 0px 5px #A7B6EA;
-          box-shadow: 0px 0px 5px #A7B6EA; }
->>>>>>> e7e2d23112391047610c190991056c8413784ada
+          box-shadow: 0px 0px 5px #A7B6EA;
+}
 
 #section2 .choosespan {
   font-size: 24px !important;
@@ -380,12 +319,9 @@ section {
   font-size: 24px;
   border-radius: 30.182px;
   display: none;
-<<<<<<< HEAD
-}
-=======
   -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5); }
->>>>>>> e7e2d23112391047610c190991056c8413784ada
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
 
 #section2 .show {
   display: -webkit-box;
