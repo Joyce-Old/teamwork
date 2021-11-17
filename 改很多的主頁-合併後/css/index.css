@@ -483,6 +483,7 @@ section {
   width: 100%;
   height: 1634px;
   padding-top: 41px;
+  position: relative;
 }
 
 #section4 img {
@@ -511,18 +512,17 @@ section {
 #section4 #publicTransport #publicTransportArea {
   width: 721px;
   height: 465px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   border-radius: 24px;
+  font-weight: bold;
 }
 
 #section4 #publicTransport #publicTransportArea #transportationTitle {
   height: 70px;
   vertical-align: middle;
   display: table-cell;
-}
-
-#section4 #publicTransport #publicTransportArea #transportationTitle span {
+  padding-left: 20px;
   font-size: 36px;
 }
 
@@ -609,12 +609,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   padding-left: 32px;
+  font-weight: bold;
 }
 
 #section4 #carAndBicycle #car #carArea {
   width: 476px;
   height: 212px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 24px;
 }
@@ -622,6 +623,9 @@ section {
 #section4 #carAndBicycle #car #carArea #carTitle {
   height: 74px;
   font-size: 36px;
+  vertical-align: middle;
+  display: table-cell;
+  padding-left: 20px;
 }
 
 #section4 #carAndBicycle #car #carArea #carContent {
@@ -653,6 +657,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: bold;
 }
 
 #section4 #carAndBicycle #bicycle #bicycleImg {
@@ -660,37 +665,40 @@ section {
 }
 
 #section4 #carAndBicycle #bicycle #bicycleImg img {
-  height: 306px;
+  height: 186px;
   width: 306px;
-  margin: 40px 24px;
+  margin: 96px 24px;
 }
 
 #section4 #carAndBicycle #bicycle #bicycleArea {
   width: 482px;
   height: 382px;
   margin-right: 26px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 24px;
 }
 
 #section4 #carAndBicycle #bicycle #bicycleArea #bicycleTitle {
   height: 74px;
-  width: 100%;
   font-size: 36px;
+  vertical-align: middle;
+  display: table-cell;
+  padding-left: 20px;
 }
 
 #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 40px;
 }
 
 #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentUp {
-  height: 204px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,19 +709,92 @@ section {
 
 #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentUp span {
   width: 100%;
-  height: 34px;
   font-size: 18px;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+#section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentDw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentDw span {
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+#section4 #footerContent {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 411px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 313px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#section4 #footerContent #footerContentArea {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section4 #footerContent #footerContentArea #footerInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section4 #footerContent #footerContentArea #footerInformation #footerLogo {
+  width: 195px;
+  height: 218px;
+}
+
+#section4 #footerContent #footerContentArea #footerInformation #footerLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+#section4 #footerContent #footerContentArea #footerInformation #footerDescription {
+  padding: 57px 0 0 27px;
+}
+
+#section4 #footerContent #footerContentArea #footerInformation #footerDescription p {
+  margin: 0 0 20px 0;
+}
+
+#section4 #footerContent #footerContentArea #copyright {
+  padding: 0 0 41px 0;
 }
 
 footer .wave3 {
   width: 1920px;
   overflow: hidden;
   position: absolute;
-  bottom: -5px;
 }
 
 footer .wave3 svg {
-  width: 150%;
+  width: 175%;
 }
 
 footer .wave3 .wave {
