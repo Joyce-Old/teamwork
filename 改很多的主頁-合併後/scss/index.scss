@@ -348,28 +348,28 @@ section {
         width: 100%;
         padding-top: 66px;
 
+        
+        .section3Cards:nth-child(even) {
+            padding-top: 226px;
+        }
+        
+        .section3Cards:nth-child(1) {
+            min-width: 300px;
+            height: 750px;
+        }
+        
+        .section3Cards:nth-last-child(1) {
+            min-width: 700px;
+            height: 750px;
+        }
+        
         .section3Cards {
             min-width: 316.5px;
             height: 750px;
             display: flex;
             justify-content: center;
             margin-right: 24px;
-        }
-
-        .section3Cards:nth-child(even) {
-            padding-top: 226px;
-        }
-
-        .section3Cards:nth-child(1) {
-            min-width: 300px;
-            height: 750px;
-        }
-
-        .section3Cards:nth-last-child(1) {
-            min-width: 700px;
-            height: 750px;
-        }
-
+        
         .section3Card {
             width: 305px;
             height: 520px;
@@ -416,6 +416,7 @@ section {
                 padding: 0 17.5%;
                 position: absolute;
                 bottom: 0;
+            }
             }
         }
 
