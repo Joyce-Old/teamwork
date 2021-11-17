@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.popupPage{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.contain {
+    padding: 33px 15.5% 113px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    z-index:1;
+}
+
+.closeButton {
+    margin-bottom: 142px;
+    img{
+        width: 46px;
+        border-radius: 50%;
+        box-shadow: 3px 3px 5px rgba(#000, 0.5);
+    }
+}
+
+.spotbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .spotImg {
+        width: 527px;
+        height: 527px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 7px 7px 5px rgba(#000, 0.5);
+        background-image: url(../彈出視窗/彈出視窗-img/店家、景點-封面/姊妹雙胞胎.jpg);
+        background-size: cover;
+
+        .post {
+            width: 190px;
+            height: 174.4833px;
+            background-image: url(../彈出視窗/便利貼.png);
+            background-size: cover;
+        }
+    }
+
+    .spotName {
+        width: 310px;
+        height: 90px;
+        background-image: url(../彈出視窗/便條紙2.png);
+        background-repeat: no-repeat;
+        font-family: 微軟正黑體;
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 90px;
+        padding-left: 14px;
+
+        margin-top: 132px;
+        margin-right: 200px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 345px;
+    margin-top: 89px;
+    margin-bottom: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .glide {
+        width: 100%;
+    }
+    .glide__track{
+        overflow: visible;
+
+    }
+
+    .glide__slides {
+        overflow: visible;
+        height: 293px;
+        justify-content: space-between;
+    }
+
+    .glide__slide {
+        filter: blur(3px);
+        opacity: 0.7;
+        transition: 0.3s linear;
+        width: 306px;
+        // 寬度寫在element.style 應該是寫在js(?)
+        height: 293px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .glide__slide--active {
+        opacity: 1;
+        filter: none;
+        width: 637px;
+        // 完全沒有用
+        // height: 334px;
+       
+        transform: scale(1.1);
+        box-shadow: 7px 7px 5px rgba(#000, 0.5);
+        z-index: 1;
+
+        img {
+            width: 100%;
+
+        }
+
+    }
+
+
+}
+
+.spotText{
+    font-family: 微軟正黑體;
+    h1 {
+        font-size: 24px;
+        width: 800px;
+        margin-top: 0;
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #000;
+    }
+    span {
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: bold;
+    }
+    .spotDescript {
+        margin-bottom: 50px;
+    }
+}
+
+.top{
+    width: 100%;
+    height: 667px;
+    background-image: url(../彈出視窗/彈出視窗-背景2.png);
+    background-size: cover;
+    margin-bottom: -667px;
+    // 同高度
+}
+
+.wave3 {
+    width: 1920px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+
+    svg {
+        width: 100%;
+    }
+
+    .wave {
+        animation: wave 3s linear;
+        animation-iteration-count: infinite;
+        fill: url(#lineGradient);
+
+    }
+
+    @keyframes wave {
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}

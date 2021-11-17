@@ -1,0 +1,172 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.popupPage {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative; }
+
+.contain {
+  padding: 33px 15.5% 113px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  z-index: 1; }
+
+.closeButton {
+  margin-bottom: 142px; }
+  .closeButton img {
+    width: 46px;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+
+.spotbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .spotbox .spotImg {
+    width: 527px;
+    height: 527px;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+    background-image: url(../彈出視窗/彈出視窗-img/店家、景點-封面/姊妹雙胞胎.jpg);
+    background-size: cover; }
+    .spotbox .spotImg .post {
+      width: 190px;
+      height: 174.4833px;
+      background-image: url(../彈出視窗/便利貼.png);
+      background-size: cover; }
+  .spotbox .spotName {
+    width: 310px;
+    height: 90px;
+    background-image: url(../彈出視窗/便條紙2.png);
+    background-repeat: no-repeat;
+    font-family: 微軟正黑體;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 90px;
+    padding-left: 14px;
+    margin-top: 132px;
+    margin-right: 200px; }
+
+.swiper {
+  width: 100%;
+  height: 345px;
+  margin-top: 89px;
+  margin-bottom: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
+  .swiper .glide {
+    width: 100%; }
+  .swiper .glide__track {
+    overflow: visible; }
+  .swiper .glide__slides {
+    overflow: visible;
+    height: 293px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .swiper .glide__slide {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    opacity: 0.7;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    width: 306px;
+    height: 293px;
+    overflow: hidden; }
+    .swiper .glide__slide img {
+      width: 100%; }
+  .swiper .glide__slide--active {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+    width: 637px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1; }
+    .swiper .glide__slide--active img {
+      width: 100%; }
+
+.spotText {
+  font-family: 微軟正黑體; }
+  .spotText h1 {
+    font-size: 24px;
+    width: 800px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #000; }
+  .spotText span {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold; }
+  .spotText .spotDescript {
+    margin-bottom: 50px; }
+
+.top {
+  width: 100%;
+  height: 667px;
+  background-image: url(../彈出視窗/彈出視窗-背景2.png);
+  background-size: cover;
+  margin-bottom: -667px; }
+
+.wave3 {
+  width: 1920px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0; }
+  .wave3 svg {
+    width: 100%; }
+  .wave3 .wave {
+    -webkit-animation: wave 3s linear;
+            animation: wave 3s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    fill: url(#lineGradient); }
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+@keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+/*# sourceMappingURL=彈出切版.css.map */
