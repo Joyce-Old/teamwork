@@ -137,6 +137,8 @@ section {
 
             &:nth-child(1) {
                 background-color: rgba($white, 0.5);
+                box-shadow: 0px 0px 30px rgba(#3BA1DC, 0.75);
+
             }
 
             .time {
@@ -202,6 +204,7 @@ section {
 
     .choose {
         background-color: $choose !important;
+        box-shadow: 0px 0px 5px #A7B6EA;
     }
 
     .choosespan {
@@ -285,6 +288,8 @@ section {
         font-size: 24px;
         border-radius: 30.182px;
         display: none;
+        box-shadow: 7px 7px 5px rgba(black, 0.5);
+        // Ai檔不透明度是0.75，可是用0.5看起來比較像
         
     }
     .show{
