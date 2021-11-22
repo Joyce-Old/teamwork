@@ -1,3 +1,4 @@
+// header
 @media screen and (max-width : 1470px) {
     header {
         nav {
@@ -118,6 +119,7 @@ input:checked+.menu-list {
     }
 }
 
+// 彈出頁面
 @media screen and (max-width:1600px) {
     .top {
         width: 1600px !important;
@@ -171,6 +173,8 @@ input:checked+.menu-list {
         display: none;
     }
 }
+
+// section2+3+4
 @media screen and (max-width : 1470px) {
     #section2 {
         max-height: 827px;
@@ -227,13 +231,20 @@ input:checked+.menu-list {
     }
     #section4 {
         .wavefooter3 {
-            svg {
-                // width: 200%;
+            height: 2000px;
+            z-index: 1;
+            #wavefooter1{
+                display: none;
+            }
+            #wavefooter2{
+                display: block;
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
 
             }
-            // #wavefooter1{
-            //     height: 1500px!important;
-            // }
+            
+            
         }
 
         #footerContent {
@@ -272,8 +283,10 @@ input:checked+.menu-list {
             display: block;
             position: absolute;
             width: 148px;
-            top: -440px;
-            left: 155px;
+            height: 100%;
+            top: -550px;
+            transform: translateX(-42%);
+            
         }
     }
 }

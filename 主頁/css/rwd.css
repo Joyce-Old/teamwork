@@ -183,6 +183,16 @@ input:checked + .menu-list {
       display: none; }
     #section2 .fixed-img {
       display: none; }
+  #section4 .wavefooter3 {
+    height: 2000px;
+    z-index: 1; }
+    #section4 .wavefooter3 #wavefooter1 {
+      display: none; }
+    #section4 .wavefooter3 #wavefooter2 {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      bottom: 0; }
   #section4 #footerContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -216,8 +226,10 @@ input:checked + .menu-list {
     display: block;
     position: absolute;
     width: 148px;
-    top: -440px;
-    left: 155px; } }
+    height: 100%;
+    top: -550px;
+    -webkit-transform: translateX(-42%);
+            transform: translateX(-42%); } }
 
 @media screen and (max-width: 1024px) {
   #section2 {
