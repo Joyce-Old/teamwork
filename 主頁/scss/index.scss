@@ -35,6 +35,10 @@ header {
     top: 0;
     z-index: 10;
 
+    .fa-bars {
+        display: none;
+    }
+
     .logo {
         margin-right: auto;
 
@@ -78,6 +82,7 @@ section {
     background-image: url(../圖片/section1/banner.png);
     background-size: cover;
     background-position: center;
+    height: 100vh;
 
     .banner-road {
         width: 100%;
