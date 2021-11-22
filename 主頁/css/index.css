@@ -530,6 +530,7 @@ section {
 }
 
 #section4 .trasportation {
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,21 +618,24 @@ section {
   padding-left: 69px;
 }
 
-#section4 .trasportation .content .contentWord .smallTitle {
-  height: 39px;
-}
-
 #section4 .trasportation .content .contentWord .position {
   margin-bottom: 25px;
 }
 
-#section4 .trasportation .content .contentWord .position .smallTitle > p, #section4 .trasportation .content .contentWord .position .word > p {
+#section4 .trasportation .content .contentWord .position .word > p {
   margin: 0 0 14px 0;
   font-size: 18px;
   font-weight: bold;
 }
 
+#section4 .trasportation .content .contentWord .position .smallTitle > p {
+  margin: 0 0 14px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 #section4 .trasportation .content .byPublicTransport {
+  display: none;
   width: 550px;
   height: 800px;
   border-radius: 24px;
@@ -642,7 +646,7 @@ section {
 #section4 .trasportation .content .byCar {
   display: none;
   width: 550px;
-  height: 200px;
+  height: 250px;
   border-radius: 24px;
   background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
   background: linear-gradient(to right, #FFF8D8, #93F2F9);

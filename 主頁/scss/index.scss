@@ -509,6 +509,7 @@ section {
         height: 50px;
     }
     .trasportation{
+        height: 800px;
         display: flex;
         justify-content: space-between;
         padding-left: 22%;
@@ -570,20 +571,24 @@ section {
 
             .contentWord{
                 padding-left: 69px;
-                    .smallTitle{
-                        height: 39px;
-                    }
+                    
                     
                     .position{
                         margin-bottom: 25px;
-                        .smallTitle>p,.word>p{
+                        .word>p{
                         margin: 0 0 14px 0;
                         font-size: 18px;
                         font-weight: bold;
                         }
+                        .smallTitle>p{
+                            margin: 0 0 14px 0;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
                     }
             }
             .byPublicTransport{
+                display: none;
                 width: 550px;
                 height: 800px;
                 border-radius: 24px;
@@ -593,7 +598,7 @@ section {
             .byCar{
                 display: none;
                 width: 550px;
-                height: 200px;
+                height: 250px;
                 border-radius: 24px;
                 background: linear-gradient(to right,#FFF8D8,#93F2F9);
             }
