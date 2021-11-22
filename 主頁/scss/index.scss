@@ -608,6 +608,51 @@ section {
         }
     }
 
+    @media screen and (max-width: 1470px) {
+        .trasportation{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 550px;
+            padding: 0;
+            margin: 0 auto;
+            .btn{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 144px;
+                div {
+                    width: 138px;
+                    height: 138px;
+                    border-radius: 50%;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .busBtn{
+                        img{
+                            width: 77px;
+                            height: 89px;
+                        }
+                    }  
+                    .carBtn{
+                        img{
+                            width: 87px;
+                            height: 69px;
+                        }
+                    }
+                    .bicycleBtn{
+                        img{
+                            width: 114px;
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     #footerContent {
         position: absolute;
         z-index: 2;
