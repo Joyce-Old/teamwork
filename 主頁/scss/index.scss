@@ -155,15 +155,7 @@ section {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #section2 {
-        .time-circle {
-            .time {
-                display: none;
-            }
-        }
-    }
-}
+
 
 #section2 {
     .timelist{display: none;}
@@ -472,37 +464,7 @@ section {
 
     }
 
-    // width: 100%;
-    // overflow: -moz-hidden-unscrollable;
-    // background-color: burlywood;
-
-    // div::-webkit-scrollbar {
-    //     display: none;
-    // }
-
-    // div {
-    //     -ms-overflow-style: none;
-    //     height: 100%;
-    //     width: calc(100vw + 18px);
-    //     overflow: auto;
-    // }
-
-    // .horizontal-scroll-wrapper {
-    //     width: 700px; //控制與父件的高度
-    //     height: 1920px;
-    //     overflow-y: auto;
-    //     overflow-x: hidden;
-    //     transform-origin: right top;
-    //     transform: rotate(-90deg) translateY(-700px);
-    // }
-
-    // .horizontal-scroll-wrapper>div {
-    //     width: 400px;  //控制上下寬
-    //     height: 300px; //控制左右距離
-    //     background-color: blue;
-    //     transform: rotate(90deg);
-    //     transform-origin: right top;
-    // }
+   
 }
 
 #section4 {
@@ -514,6 +476,9 @@ section {
     height: 1634px;
     padding-top: 41px;
     position: relative;
+    .logo-white{
+        display: none;
+    }
 
     img {
         width: 196px;
@@ -740,7 +705,8 @@ section {
         bottom: 0px;
         display: flex;
         justify-content: space-between;
-        padding: 0 313px;
+        // padding: 0 313px;
+        padding: 0 17%;
         font-size: 18px;
         font-weight: bold;
 
@@ -778,21 +744,17 @@ section {
         }
     }
 
-
-
-}
-
-footer {
-    .wave3 {
+    .wavefooter3 {
         width: 1920px;
         overflow: hidden;
         position: absolute;
 
         svg {
-            width: 175%;
+            width: 100%;
+
         }
 
-        .wave {
+        .wavefooter {
             animation: wave 3s linear;
             animation-iteration-count: infinite;
             fill: url(#lineGradient2);
@@ -806,6 +768,8 @@ footer {
     }
 
 }
+
+
 
 // 彈出視窗
 
