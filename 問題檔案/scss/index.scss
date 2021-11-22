@@ -368,6 +368,8 @@ section {
     top: 75px;
     z-index: 1;
     height: 2700px;
+    color: transparent;
+    
     a{
         color: #000;
     }
@@ -530,6 +532,7 @@ section {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            z-index: 1;
             div {
                 width: 197px;
                 height: 197px;
@@ -563,6 +566,7 @@ section {
 
         .content{
             padding-top: 75px;
+            z-index: 1;
             .title{
                 width: 100%;
                 height: 94px;
