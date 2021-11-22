@@ -409,185 +409,111 @@ section {
 
 #section4 {
   max-width: 1920px;
-  background-image: url(../圖片/section4/road2.jpg);
+  background-image: url(../圖片/section4/road3.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 1634px;
-  padding-top: 41px;
   position: relative; }
   #section4 img {
-    width: 196px;
-    height: 196px; }
-  #section4 #publicTransport {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    #section4 #publicTransport #publicTransportImg {
-      width: 752px;
-      height: 471px;
-      position: relative; }
-      #section4 #publicTransport #publicTransportImg img {
-        position: absolute;
-        right: 24px;
-        top: 27px; }
-    #section4 #publicTransport #publicTransportArea {
-      width: 721px;
-      height: 465px;
-      background-color: rgba(0, 0, 0, 0.75);
-      color: white;
-      border-radius: 24px;
-      font-weight: bold; }
-      #section4 #publicTransport #publicTransportArea #transportationTitle {
-        height: 70px;
-        vertical-align: middle;
-        display: table-cell;
-        padding-left: 20px;
-        font-size: 36px; }
-      #section4 #publicTransport #publicTransportArea #transportationContent {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin-left: 46px; }
-        #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft {
-          width: 396px; }
-          #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(1) {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; }
-            #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(1) span:nth-child(1) {
-              width: 100%;
-              height: 39px;
-              font-size: 24px; }
-            #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(1) span:nth-child(2) {
-              width: 100%;
-              height: 60px;
-              font-size: 18px; }
-          #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(2) {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            font-size: 18px; }
-            #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(2) span:nth-child(1) {
-              font-size: 24px;
-              line-height: 24px; }
-            #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentLeft div:nth-child(2) span {
-              width: 100%;
-              line-height: 34px; }
-        #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentRight {
-          width: 281px; }
-          #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentRight span:nth-child(1) {
-            width: 100%;
-            height: 39px;
-            font-size: 24px; }
-          #section4 #publicTransport #publicTransportArea #transportationContent #transportationContentRight span {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            width: 100%;
-            height: 34px;
-            font-size: 18px; }
-  #section4 #carAndBicycle {
+    width: 50px;
+    height: 50px; }
+  #section4 .trasportation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-    #section4 #carAndBicycle #car {
+            justify-content: space-between;
+    padding-left: 22%;
+    padding-right: 26%;
+    max-height: 1090px;
+    z-index: 50; }
+    #section4 .trasportation .btn {
+      max-width: 1082px;
+      padding: 52px 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding-left: 32px;
-      font-weight: bold; }
-      #section4 #carAndBicycle #car #carArea {
-        width: 476px;
-        height: 212px;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        border-radius: 24px; }
-        #section4 #carAndBicycle #car #carArea #carTitle {
-          height: 74px;
-          font-size: 36px;
-          vertical-align: middle;
-          display: table-cell;
-          padding-left: 20px; }
-        #section4 #carAndBicycle #car #carArea #carContent {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #section4 .trasportation .btn div {
+        width: 197px;
+        height: 197px;
+        background-color: #D7D7D7;
+        border-radius: 50%; }
+        #section4 .trasportation .btn div div {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          padding-left: 48px; }
-          #section4 #carAndBicycle #car #carArea #carContent span {
-            width: 100%;
-            height: 34px;
-            font-size: 18px; }
-      #section4 #carAndBicycle #car #carImg {
-        display: block;
-        height: 212px;
-        margin-left: 20px; }
-        #section4 #carAndBicycle #car #carImg img {
-          margin: 7px 0; }
-    #section4 #carAndBicycle #bicycle {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-weight: bold; }
-      #section4 #carAndBicycle #bicycle #bicycleImg {
-        height: 382px; }
-        #section4 #carAndBicycle #bicycle #bicycleImg img {
-          height: 186px;
-          width: 306px;
-          margin: 96px 24px; }
-      #section4 #carAndBicycle #bicycle #bicycleArea {
-        width: 482px;
-        height: 382px;
-        margin-right: 26px;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        border-radius: 24px; }
-        #section4 #carAndBicycle #bicycle #bicycleArea #bicycleTitle {
-          height: 74px;
-          font-size: 36px;
-          vertical-align: middle;
-          display: table-cell;
-          padding-left: 20px; }
-        #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          padding-left: 40px; }
-          #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentUp {
-            width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; }
-            #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentUp span {
-              width: 100%;
-              font-size: 18px;
-              padding: 0;
-              margin: 0 0 16px 0; }
-          #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentDw {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap; }
-            #section4 #carAndBicycle #bicycle #bicycleArea #bicycleContent #bicycleContentDw span {
-              font-size: 18px;
-              padding: 0;
-              margin: 0 0 16px 0; }
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        #section4 .trasportation .btn div .busBtn img {
+          width: 127px;
+          height: 110px; }
+        #section4 .trasportation .btn div .carBtn img {
+          width: 124px;
+          height: 98px; }
+        #section4 .trasportation .btn div .bicycleBtn img {
+          width: 163px;
+          height: 100px; }
+    #section4 .trasportation .content {
+      padding-top: 75px; }
+      #section4 .trasportation .content .title {
+        width: 100%;
+        height: 94px;
+        font-weight: bold;
+        padding-left: 35px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 36px; }
+        #section4 .trasportation .content .title p {
+          margin: 0; }
+      #section4 .trasportation .content .contentWord {
+        padding-left: 69px; }
+        #section4 .trasportation .content .contentWord .smallTitle {
+          height: 39px; }
+        #section4 .trasportation .content .contentWord .position {
+          margin-bottom: 25px; }
+          #section4 .trasportation .content .contentWord .position .smallTitle > p, #section4 .trasportation .content .contentWord .position .word > p {
+            margin: 0 0 14px 0;
+            font-size: 18px;
+            font-weight: bold; }
+      #section4 .trasportation .content .byPublicTransport {
+        width: 550px;
+        height: 800px;
+        border-radius: 24px;
+        background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
+        background: linear-gradient(to right, #FFF8D8, #93F2F9); }
+      #section4 .trasportation .content .byCar {
+        display: none;
+        width: 550px;
+        height: 200px;
+        border-radius: 24px;
+        background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
+        background: linear-gradient(to right, #FFF8D8, #93F2F9); }
+      #section4 .trasportation .content .byBicycle {
+        display: none;
+        width: 550px;
+        height: 450px;
+        border-radius: 24px;
+        background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
+        background: linear-gradient(to right, #FFF8D8, #93F2F9); }
+        #section4 .trasportation .content .byBicycle .position .word:nth-child(1) {
+          margin-bottom: 50px; }
   #section4 #footerContent {
     position: absolute;
     z-index: 2;
@@ -637,7 +563,7 @@ footer .wave3 {
   overflow: hidden;
   position: absolute; }
   footer .wave3 svg {
-    width: 175%; }
+    width: 150%; }
   footer .wave3 .wave {
     -webkit-animation: wave 3s linear;
             animation: wave 3s linear;
