@@ -10,15 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-.now {
-  color: white;
-  background-color: #0049d1;
-}
-
-.act {
-  display: block;
-}
-
 #container {
   margin: 0 auto;
   max-width: 1920px;
@@ -554,6 +545,7 @@ section {
 
 #section4 .trasportation .btn {
   max-width: 1082px;
+  height: 800px;
   padding: 52px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,6 +558,15 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
+}
+
+#section4 .trasportation .btn .btns {
+  background-color: #D7D7D7;
+}
+
+#section4 .trasportation .btn .now {
+  background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
+  background: linear-gradient(to right, #FFF8D8, #93F2F9);
 }
 
 #section4 .trasportation .btn div {
@@ -645,6 +646,7 @@ section {
 }
 
 #section4 .trasportation .content .byPublicTransport {
+  display: none;
   width: 550px;
   height: 800px;
   border-radius: 24px;
@@ -655,7 +657,7 @@ section {
 #section4 .trasportation .content .byCar {
   display: none;
   width: 550px;
-  height: 200px;
+  height: 250px;
   border-radius: 24px;
   background: -webkit-gradient(linear, left top, right top, from(#FFF8D8), to(#93F2F9));
   background: linear-gradient(to right, #FFF8D8, #93F2F9);
@@ -672,6 +674,10 @@ section {
 
 #section4 .trasportation .content .byBicycle .position .word:nth-child(1) {
   margin-bottom: 50px;
+}
+
+#section4 .trasportation .content .act {
+  display: block;
 }
 
 #section4 #footerContent {
