@@ -225,18 +225,18 @@
       <section id="section4">
         <div class="trasportation">
           <div class="btn">
-            <div>
-              <div class="busBtn btns now">
+            <div class="btns now">
+              <div class="busBtn">
                 <img src="./圖片/section4/bus.png" alt="">
               </div>
             </div>
-            <div>
-              <div class="carBtn btns">
+            <div class="btns">
+              <div class="carBtn">
                 <img src="./圖片/section4/car.png" alt="">
               </div>
             </div>
-            <div>
-              <div class="bicycleBtn btns">
+            <div class="btns">
+              <div class="bicycleBtn">
                 <img src="./圖片/section4/bike.png" alt="">
               </div>
             </div>
@@ -1189,12 +1189,12 @@
         tab[index].onclick = function(){
           console.log(index)
             for (let i = 0; i < tab.length; i++) {
-                content[i].classList.remove('.act')
-                tab[i].classList.remove('.now')
+                content[i].classList.remove('act')
+                tab[i].classList.remove('now')
                 console.log('remove')
             }
-            tab[index].classList.add('.now')
-            content[index].classList.add('.act')
+            tab[index].classList.add('now')
+            content[index].classList.add('act')
             console.log('add')
         }
 
