@@ -126,6 +126,9 @@ section {
   #section2 .time-circle .time {
     display: none; } }
 
+#section2 .timelist {
+  display: none; }
+
 #section2 .time-circle {
   width: 493px;
   height: 493px;
@@ -648,7 +651,7 @@ footer .wave3 {
             animation: wave 3s linear;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    fill: url(#lineGradient); }
+    fill: url(#lineGradient2); }
 
 @keyframes wave {
   to {

@@ -166,6 +166,7 @@ section {
 }
 
 #section2 {
+    .timelist{display: none;}
     .time-circle {
         width: 493px;
         height: 493px;
@@ -794,7 +795,7 @@ footer {
         .wave {
             animation: wave 3s linear;
             animation-iteration-count: infinite;
-            fill: url(#lineGradient);
+            fill: url(#lineGradient2);
         }
 
         @keyframes wave {
