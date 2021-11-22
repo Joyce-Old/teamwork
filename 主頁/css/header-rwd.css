@@ -2,29 +2,109 @@
 @media screen and (max-width: 1470px) {
   header nav ul li {
     font-size: 16px;
-    white-space: nowrap; } }
+    white-space: nowrap;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   header {
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    header .fa-bars {
-      display: block;
-      position: absolute;
-      left: 60px;
-      font-size: 30px; }
-    header .logo {
-      margin-right: 0; }
-    header nav {
-      display: none; }
+            justify-content: center;
+  }
+  header .fa-bars {
+    display: block;
+    position: absolute;
+    left: 60px;
+    font-size: 30px;
+  }
+  header .logo {
+    margin-right: 0;
+  }
+  header nav {
+    display: none;
+  }
   #section1 {
     background-image: url(../圖片/section1/banner-small.png);
-    height: 100vh; }
-    #section1 .banner-road {
-      height: 88px; }
-    #section1 .bali-big {
-      font-size: 88px;
-      left: 15px; } }
+    height: 100vh;
+  }
+  #section1 .banner-road {
+    height: 88px;
+  }
+  #section1 .bali-big {
+    font-size: 88px;
+    left: 15px;
+    bottom: 250px;
+  }
+  #section1 .banner-bike {
+    right: 280px;
+  }
+  #section1 .banner-text {
+    font-size: 36px;
+  }
+}
+
+/* burger-list */
+.drop-menu {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  z-index: 1;
+  display: none;
+}
+
+.drop-menu label {
+  display: block;
+  cursor: pointer;
+}
+
+.drop-menu input {
+  display: none;
+}
+
+.menu-list {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 51px;
+}
+
+.menu-list .btn2 {
+  width: 280px;
+  border-bottom: 1px dashed black;
+  background-color: #FFF9D9;
+}
+
+.menu-list .href2 {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-family: 'New Tegomin', serif;
+  font-size: 20px;
+}
+
+.menu-list .href2:hover {
+  color: #D5758A;
+}
+
+.menu-list .href2:active {
+  color: #D5758A;
+  font-weight: bold;
+}
+
+input:checked + .menu-list {
+  max-height: 440px;
+}
+
+@media screen and (max-width: 1024px) {
+  .drop-menu {
+    display: block;
+  }
+}
 /*# sourceMappingURL=header-rwd.css.map */
