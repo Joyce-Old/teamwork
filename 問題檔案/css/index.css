@@ -680,6 +680,63 @@ section {
   display: block;
 }
 
+@media screen and (max-width: 1100px) {
+  #section4 .trasportation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 550px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #section4 .trasportation .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 144px;
+  }
+  #section4 .trasportation .btn div {
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+  }
+  #section4 .trasportation .btn div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section4 .trasportation .btn div .busBtn img {
+    width: 77px;
+    height: 89px;
+  }
+  #section4 .trasportation .btn div .carBtn img {
+    width: 87px;
+    height: 69px;
+  }
+  #section4 .trasportation .btn div .bicycleBtn img {
+    width: 114px;
+    height: 70px;
+  }
+}
+
 #section4 #footerContent {
   position: absolute;
   z-index: 2;
