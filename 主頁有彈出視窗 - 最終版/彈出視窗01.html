@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/glide.min.js"></script>
+
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./css/彈出視窗.css">
+</head>
+<body>
+  <!-- 彈出視窗 -->
+  <div id="modal-01">
+    <div class="top"></div>
+    <div id="btn-close-modal" class="close-modal-01 closeButton">
+      <a href="./index.html#section3">
+        <img src="./圖片/section3/彈出視窗/close-btn.png" alt="">
+      </a>
+    </div>
+    <div class="modal-content cardPage">
+      <div class="waveout3">
+        <svg viewBox="0 0 120 100">
+          <defs>
+            <path id="waveout"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 100 h -240 z" />
+            <linearGradient x1="0.5" y1="0.5" x2="1" y2="0.5" id="lineGradient" spreadMethod="repeat">
+              <stop offset="0%" stop-color="#90F0FC" />
+              <stop offset="50%" stop-color="#FFF9D9" />
+              <stop offset="100%" stop-color="#90F0FC" />
+            </linearGradient>
+          </defs>
+          <use id="waveout1" class="waveout" xlink:href="#waveout" x="0" y="0"></use>
+        </svg>
+      </div>
+      <div class="contain">
+        <div class="spotbox">
+          <div class="spotImg">
+            <div class="post">
+            </div>
+          </div>
+          <div class="spotName">腳踏車道</div>
+        </div>
+        <div class="swiper">
+          <div class="images glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/01-腳踏車道/1.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/01-腳踏車道/2.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/01-腳踏車道/3.jpg" alt="">
+                </li>
+
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                  class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="spotText">
+          <div class="spotDescript">
+            <h1>景點介紹</h1>
+            <span>左岸的八里和淡水河右岸呈現不同風貌，保留濃厚的人文氣息及豐富的自然資源，成為近來熱門的觀光景點。</br>
+              沿著淡水河左岸邊建設的「左岸自行車道」為台灣十大經典單車路線，從渡船頭起，經老榕碉堡、左岸公園、水興宮、左岸劇場、挖子尾紅樹林自然保護區、污水處理場、十三行博物館止，全長約4公里。</br>
+              不僅寬敞平緩、人車分道，還有持續增加的美麗造景。尤其適合全家一起租借腳踏車，沿路賞玩左岸各個景點，輕鬆騎車再搭配必吃的小吃。是一條結合自然教育、運動休閒、景色優美好拍的自行車道。</br>
+            </span>
+          </div>
+          <div class="spotContact">
+            <h1>參觀資訊</h1>
+            <span>電話：(02)8969-9596</br>
+              時間：全天開放</br>
+              地址：新北市八里區左岸</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+      new Glide(".images", {
+          type: 'carousel',
+          perView: 3,
+          focusAt: 'center',
+          gap: 40,
+      }).mount()
+  </script>
+</body>
+
+</html>
+  
