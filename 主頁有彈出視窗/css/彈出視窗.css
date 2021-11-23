@@ -1,0 +1,254 @@
+@charset "UTF-8";
+#btn-close-modal {
+  max-width: 1903px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: transparent; }
+
+.closeButton img {
+  width: 46px;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin: 33px auto 142px; }
+
+.top {
+  width: 100%;
+  max-width: 1920px;
+  height: 667px;
+  background-image: url(../圖片/section3/彈出視窗/彈出視窗-背景2.png);
+  background-size: cover;
+  margin: 0 auto -667px; }
+
+.cardPage {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative; }
+  .cardPage .waveout3 {
+    width: 1920px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -5px; }
+    .cardPage .waveout3 svg {
+      width: 100%; }
+    .cardPage .waveout3 .waveout {
+      -webkit-animation: wave 3s linear;
+              animation: wave 3s linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      fill: url(#lineGradient); }
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+@keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+  .cardPage .contain {
+    padding: 33px 15.5% 113px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    background-color: transparent; }
+  .cardPage .spotbox {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .cardPage .spotbox .spotImg {
+      width: 527px;
+      height: 527px;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+              box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+      background-size: cover; }
+      .cardPage .spotbox .spotImg .post {
+        width: 190px;
+        height: 174.4833px;
+        background-image: url(../圖片/section3/彈出視窗/便利貼.png);
+        background-size: cover; }
+    .cardPage .spotbox .spotName {
+      width: 310px;
+      height: 90px;
+      background-image: url(../圖片/section3/彈出視窗/便條紙2.png);
+      background-repeat: no-repeat;
+      font-family: 微軟正黑體;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 90px;
+      padding-left: 14px;
+      margin-top: 132px;
+      margin-right: 200px; }
+  .cardPage .spotText {
+    font-family: 微軟正黑體; }
+    .cardPage .spotText h1 {
+      font-size: 24px;
+      width: 800px;
+      margin-top: 0;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #000; }
+    .cardPage .spotText span {
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: bold; }
+    .cardPage .spotText .spotDescript {
+      margin-bottom: 50px; }
+
+.swiper {
+  width: 100%;
+  height: 345px;
+  margin-top: 89px;
+  margin-bottom: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
+
+.glide {
+  width: 100%; }
+
+.glide__track {
+  overflow: visible; }
+
+.glide__slides {
+  overflow: visible;
+  height: 293px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.glide__slide {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  opacity: 0.7;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  width: 306px;
+  height: 293px;
+  overflow: hidden; }
+  .glide__slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.glide__slide--active {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+  width: 637px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  .glide__slide--active img {
+    width: 100%; }
+
+#modal-01 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/01-腳踏車道.jpg); }
+
+#modal-02 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/02-50年代童玩.jpg); }
+
+#modal-03 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/03-許家花枝燒.jpg); }
+
+#modal-04 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/04-宋記油心鹹蛋.jpg); }
+
+#modal-05 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/05-姊妹雙胞胎.jpg); }
+
+#modal-06 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/06-TON-UP.jpg); }
+
+#modal-07 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/07-水灣四季餐廳.jpg); }
+
+#modal-08 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/08-巴達桑.jpg); }
+
+#modal-09 .spotImg {
+  background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/09-13行博物館.jpg); }
+
+@media screen and (max-width: 1600px) {
+  .top {
+    width: 1600px !important; }
+  .spotbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .spotbox .spotImg {
+      width: 263.5px !important;
+      height: 263.5px !important; }
+      .spotbox .spotImg .post {
+        width: 95px !important;
+        height: 87px !important; }
+    .spotbox .spotName {
+      margin: 50px auto 50px !important; }
+  .swiper {
+    margin-top: 10px;
+    margin-bottom: 60px; } }
+
+@media screen and (max-width: 768px) {
+  .top {
+    width: 768px !important;
+    height: 800px !important; }
+  .spotText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .spotText h1 {
+      text-align: center; }
+    .spotText .spotDescript, .spotText .spotContact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .spotText .spotDescript span, .spotText .spotContact span {
+        text-align: center; }
+  .swiper {
+    display: none; } }
+/*# sourceMappingURL=彈出視窗.css.map */
