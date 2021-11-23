@@ -809,6 +809,7 @@ section {
   width: 1920px;
   overflow: hidden;
   position: absolute;
+  bottom: 0;
 }
 
 #section4 .wavefooter3 #wavefooter2 {
