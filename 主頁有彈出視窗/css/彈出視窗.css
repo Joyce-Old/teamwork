@@ -1,4 +1,12 @@
 @charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
 #btn-close-modal {
   max-width: 1903px;
   width: 100%;
@@ -19,18 +27,21 @@
   height: 667px;
   background-image: url(../圖片/section3/彈出視窗/彈出視窗-背景2.png);
   background-size: cover;
+  background-position: center;
   margin: 0 auto -667px; }
 
 .cardPage {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .cardPage .waveout3 {
     width: 1920px;
     overflow: hidden;
     position: absolute;
-    bottom: -5px; }
+    bottom: 0px;
+    top: 10px; }
     .cardPage .waveout3 svg {
       width: 100%; }
     .cardPage .waveout3 .waveout {
@@ -50,7 +61,7 @@
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%); } }
   .cardPage .contain {
-    padding: 33px 15.5% 113px;
+    padding: 33px 15.5% 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,7 +114,6 @@
     font-family: 微軟正黑體; }
     .cardPage .spotText h1 {
       font-size: 24px;
-      width: 800px;
       margin-top: 0;
       margin-bottom: 28px;
       padding-bottom: 28px;
@@ -200,8 +210,6 @@
   background-image: url(../圖片/section3/彈出視窗/店家、景點-封面/09-13行博物館.jpg); }
 
 @media screen and (max-width: 1600px) {
-  .top {
-    width: 1600px !important; }
   .spotbox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -223,9 +231,6 @@
     margin-bottom: 60px; } }
 
 @media screen and (max-width: 768px) {
-  .top {
-    width: 768px !important;
-    height: 800px !important; }
   .spotText {
     display: -webkit-box;
     display: -ms-flexbox;

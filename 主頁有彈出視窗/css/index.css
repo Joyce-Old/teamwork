@@ -6,7 +6,7 @@
 body {
   max-width: 1903px !important;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   overflow-x: hidden; }
 
 #container {
@@ -315,6 +315,9 @@ section {
   opacity: 1; }
 
 #section3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
   z-index: 1;
   height: 2700px; }
   #section3 a {

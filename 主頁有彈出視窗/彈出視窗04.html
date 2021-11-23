@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/glide.min.js"></script>
+
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./css/彈出視窗.css">
+</head>
+<body>
+  <!-- 彈出視窗 -->
+  <div id="modal-04">
+    <div class="top"></div>
+    <div id="btn-close-modal" class="close-modal-03 closeButton">
+      <a href="./index.html#section3">
+        <img src="./圖片/section3/彈出視窗/close-btn.png" alt="">
+      </a>
+    </div>
+    <div class="modal-content cardPage">
+      <div class="waveout3">
+        <svg viewBox="0 0 120 100">
+          <defs>
+            <path id="waveout"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 100 h -240 z" />
+            <linearGradient x1="0.5" y1="0.5" x2="1" y2="0.5" id="lineGradient" spreadMethod="repeat">
+              <stop offset="0%" stop-color="#90F0FC" />
+              <stop offset="50%" stop-color="#FFF9D9" />
+              <stop offset="100%" stop-color="#90F0FC" />
+            </linearGradient>
+          </defs>
+          <use id="waveout1" class="waveout" xlink:href="#waveout" x="0" y="0"></use>
+        </svg>
+      </div>
+      <div class="contain">
+        <div class="spotbox">
+          <div class="spotImg">
+            <div class="post">
+            </div>
+          </div>
+          <div class="spotName">宋記油心鹹蛋</div>
+        </div>
+        <!-- 輪播 -->
+        <div class="swiper">
+          <div class="images glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/04-宋記油心鹹蛋/1.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/04-宋記油心鹹蛋/2.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/04-宋記油心鹹蛋/3.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/04-宋記油心鹹蛋/4.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/04-宋記油心鹹蛋/5.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                  class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="spotText">
+          <div class="spotDescript">
+            <h1>店家介紹</h1>
+            <span>宋記的鴨蛋來自於氣候溫和的宜蘭，別於一般用池塘水養殖的養鴨場，他們的鴨子都用溪水養殖，生出來的鴨蛋幾乎都沒有腥味，非常香醇。製作成的皮蛋很Ｑ彈，蛋黃會出油、香氣也很重。另外這裡的鹹蛋爆香後油會被逼出，可以拿來炒任何菜，端午節、中秋節也是店內的旺季，較多人會來買回去包粽子或做月餅。另外宋記還有每到假日就會一爐接一爐，需要排隊的胡椒餅。帶著芝麻香的外皮，內餡幾乎都是瘦肉跟青蔥段做成的組合，帶有濃濃的黑胡椒香氣，一口咬下，肉汁還會慢慢的滴下來，十分美味。
+            </span>
+          </div>
+          <div class="spotContact">
+            <h1>店家資訊</h1>
+            <span>電話：(02)2610-2456</br>
+              時間：08:00~20:00</br>
+              地址：新北市八里區龍米路二段172號</br>
+              <a href="https://www.facebook.com/八里宋記紅油心蛋-174272665925927/">粉絲團</a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+      new Glide(".images", {
+          type: 'carousel',
+          perView: 3,
+          focusAt: 'center',
+          gap: 40,
+      }).mount()
+  </script>
+</body>
+
+</html>
+  

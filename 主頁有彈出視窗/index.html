@@ -164,7 +164,7 @@
                 <div class="cardText">八里左岸自行車道從觀音坑溪口起，一直到八仙海岸，全程約14公里，其地面平整，木棧道與水泥路面交錯，沿著淡水河岸而行...</div>
               </div>
             </a>
-            <a id="demo02" class="section3Cards" href="#modal-02">
+            <a id="demo02" class="section3Cards" href="./彈出視窗02.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/50年代童玩-卡片.jpg" alt="">
@@ -173,7 +173,7 @@
                 <div class="cardText">許多古早味玩具，透露出50~70年代的懷舊古早味零食...</div>
               </div>
             </a>
-            <a id="demo03" class="section3Cards" href="#modal-03">
+            <a id="demo03" class="section3Cards" href="./彈出視窗03.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/許家花枝燒-卡片.jpg" alt="">
@@ -182,7 +182,7 @@
                 <div class="cardText">電視節目強力推薦的許家花枝燒，人絡繹不絕的真的生意很不錯...</div>
               </div>
             </a>
-            <a id="demo04" class="section3Cards" href="#modal-04">
+            <a id="demo04" class="section3Cards" href="./彈出視窗04.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/宋記油心鹹蛋-卡片.jpg" alt="">
@@ -191,7 +191,7 @@
                 <div class="cardText">宋記的鴨蛋來自於氣候溫和的宜蘭，別於一般用池塘水養殖的養鴨場，他們的鴨子都用溪水養殖，生出來的鴨蛋幾乎都沒有腥味，非常香醇...</div>
               </div>
             </a>
-            <a id="demo05" class="section3Cards" href="#modal-05">
+            <a id="demo05" class="section3Cards" href="./彈出視窗05.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/姊妹雙胞胎-卡片.jpg" alt="">
@@ -200,7 +200,7 @@
                 <div class="cardText">招牌上有著姊妹花的圖樣，介紹充滿復古年代感，創立於1971年。因老闆是兩位雙胞胎姐妹，所以取名姊妹雙胞胎，目前已由第二代的三位姐妹接手...</div>
               </div>
             </a>
-            <a id="demo06" class="section3Cards" href="#modal-06">
+            <a id="demo06" class="section3Cards" href="./彈出視窗06.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/TON-UP-卡片.jpg" alt="">
@@ -210,7 +210,7 @@
                   Cafe」就位於新北市八里的觀海大道上，是一間以英式經典騎士風格與重機為主題的一間特色餐廳，不僅吸引不少重機愛好者前來，也有不少人是衝著他們家的餐點、自製甜點跟一望無際的淡水河畔美景而來...</div>
               </div>
             </a>
-            <a id="demo07" class="section3Cards" href="#modal-07">
+            <a id="demo07" class="section3Cards" href="./彈出視窗07.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/水灣四季餐廳-卡片.jpg" alt="">
@@ -219,7 +219,7 @@
                 <div class="cardText">如同店名水灣,皆是倚著河岸營造熱情奔放的南洋峇里島風格,在此點一杯充滿熱帶風情的特色調飲,抑或是享受南洋風味的料理,都將是相當浪漫的感受...</div>
               </div>
             </a>
-            <a id="demo08" class="section3Cards" href="#modal-08">
+            <a id="demo08" class="section3Cards" href="./彈出視窗08.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/巴達桑-卡片.jpg" alt="">
@@ -228,7 +228,7 @@
                 <div class="cardText">如同店名一般，具有原住民氣息的主題餐廳。寬敞的用餐區適合一家大小前來聚餐這裡的餐點選擇很多，餐點都充滿道地的原住民特色...</div>
               </div>
             </a>
-            <a id="demo09" class="section3Cards" href="#modal-09">
+            <a id="demo09" class="section3Cards" href="./彈出視窗09.html">
               <div class="section3Card">
                 <div class="cardImg">
                   <img src="./圖片/section3/13行博物館-卡片.jpg" alt="">
@@ -482,13 +482,11 @@
   <!-- section景點效果js -->
   <script>
     const scrollContainer = document.querySelector("#section3CardArea");
-// 改成scroll不能動，還再試
-    scrollContainer.addEventListener("window", (evt) => {
+    scrollContainer.addEventListener("wheel", (evt) => {
       scrollContainer.scrollLeft += evt.deltaY;
     });
-
   </script>
-
+  
    <!-- 按鈕 -->
    <script>
     var tab = document.querySelectorAll('.btns')

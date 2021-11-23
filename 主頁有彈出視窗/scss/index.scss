@@ -13,7 +13,7 @@ $choose: #F8F3DD;
 body {
     max-width: 1903px!important;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -357,8 +357,8 @@ section {
 }
 
 #section3 {
-    // position: sticky;
-    // top: 75px;
+    position: sticky;
+    top: 75px;
     z-index: 1;
     height: 2700px;
     a{

@@ -1,5 +1,13 @@
 // 彈出視窗
+* {
+    box-sizing: border-box;
+}
 
+body {
+    padding: 0;
+    margin: 0;
+    // overflow-x: hidden;
+}
 #btn-close-modal {
     max-width: 1903px;
 
@@ -25,6 +33,7 @@
     // 同高度
     background-image: url(../圖片/section3/彈出視窗/彈出視窗-背景2.png);
     background-size: cover;
+    background-position: center;
     margin: 0 auto -667px;
     // background-color: transparent;
 }
@@ -34,12 +43,13 @@
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
-
+    overflow: hidden;
     .waveout3 {
         width: 1920px;
         overflow: hidden;
         position: absolute;
-        bottom: -5px;
+        bottom: 0px;
+        top: 10px;
 
         svg {
             width: 100%;
@@ -59,7 +69,7 @@
     }
 
     .contain {
-        padding: 33px 15.5% 113px;
+        padding: 33px 15.5% 0px;
 
         display: flex;
         flex-direction: column;
@@ -115,7 +125,6 @@
 
         h1 {
             font-size: 24px;
-            width: 800px;
             margin-top: 0;
             margin-bottom: 28px;
             padding-bottom: 28px;
@@ -245,9 +254,7 @@
 
 // 彈出頁面 RWD
 @media screen and (max-width:1600px) {
-    .top {
-        width: 1600px !important;
-    }
+
 
     .spotbox {
         flex-direction: column;
@@ -272,10 +279,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .top {
-        width: 768px !important;
-        height: 800px !important;
-    }
+
     .spotText {
         display: flex;
         flex-direction: column;
@@ -296,4 +300,5 @@
     .swiper {
         display: none;
     }
+
 }
