@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/glide.min.js"></script>
+
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./css/彈出視窗.css">
+</head>
+<body>
+  <!-- 彈出視窗 -->
+  <div id="modal-02">
+    <div class="top"></div>
+    <div id="btn-close-modal" class="close-modal-02 closeButton">
+      <a href="./index.html#section3">
+        <img src="./圖片/section3/彈出視窗/close-btn.png" alt="">
+      </a>
+    </div>
+    <div class="modal-content cardPage">
+      <div class="waveout3">
+        <svg viewBox="0 0 120 100">
+          <defs>
+            <path id="waveout"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 100 h -240 z" />
+            <linearGradient x1="0.5" y1="0.5" x2="1" y2="0.5" id="lineGradient" spreadMethod="repeat">
+              <stop offset="0%" stop-color="#90F0FC" />
+              <stop offset="50%" stop-color="#FFF9D9" />
+              <stop offset="100%" stop-color="#90F0FC" />
+            </linearGradient>
+          </defs>
+          <use id="waveout1" class="waveout" xlink:href="#waveout" x="0" y="0"></use>
+        </svg>
+      </div>
+      <div class="contain">
+        <div class="spotbox">
+          <div class="spotImg">
+            <div class="post">
+            </div>
+          </div>
+          <div class="spotName">50年代童玩</div>
+        </div>
+        <!-- 輪播 -->
+        <div class="swiper">
+          <div class="images glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/02-50年代童玩/1.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/02-50年代童玩/2.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/02-50年代童玩/3.jpg" alt="">
+                </li>
+
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                  class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="spotText">
+          <div class="spotDescript">
+            <h1>店家介紹</h1>
+            <span>人生對每個人來說都只會有一次的經歷，而在每個世代，也有著只有他們才知道的，屬於自己的童年。</br>
+              50年代童玩，裡面也充斥著相當多令人懷舊的零食及童玩，如果你的童年有著竹蜻蜓、仙女棒、豬公存錢桶、麵茶、巧克力醬、象皮糖、綠豆糕、過年抽獎的抽抽樂…等，倘若有機會來到八里的渡船頭老街，請不要錯過這裡，相信這裡的一切都會勾起你心中那平淡卻不失幸福的童年。
+            </span>
+          </div>
+          <div class="spotContact">
+            <h1>店家資訊</h1>
+            <span>電話：(02)8969-9596</br>
+              時間：全天開放</br>
+              地址：新北市八里區渡船頭街25號之3</br>
+              <a href="facebook.com/438942049502894">粉絲團</a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+      new Glide(".images", {
+          type: 'carousel',
+          perView: 3,
+          focusAt: 'center',
+          gap: 40,
+      }).mount()
+  </script>
+</body>
+
+</html>
+  

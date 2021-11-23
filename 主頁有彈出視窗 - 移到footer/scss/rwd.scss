@@ -1,0 +1,308 @@
+// header
+@media screen and (max-width : 1470px) {
+    header {
+        nav {
+            ul {
+                li {
+                    font-size: 16px;
+                    white-space:nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1024px) {
+   header {
+       padding: 0;
+       justify-content: center;
+
+       .fa-bars {
+           display: block;
+           position: absolute;
+           left: 60px;
+           font-size: 30px;
+       }
+
+       .logo {
+           margin-right: 0;
+       }
+       
+       nav {
+           display: none;
+       }
+    }
+
+    #section1 {
+        background-image: url(../圖片/section1/banner-small.png);
+        height: 100vh;
+
+        .banner-road {
+            height: 88px;
+        }
+
+        .bali-big {
+            font-size: 88px;
+            left: 15px;
+            bottom: 250px;
+        }
+
+        .banner-bike {
+            right: 280px;
+        }
+
+        .banner-text {
+            font-size: 36px;
+        }
+    }
+}
+
+/* burger-list */
+.drop-menu {
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    z-index: 1;
+    display: none;
+}
+
+.drop-menu label {
+    display: block;
+    cursor: pointer;
+}
+
+.drop-menu input {
+    display: none;
+}
+
+.menu-list {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 51px;
+}
+
+.menu-list .btn2 {
+    width: 280px;
+    border-bottom: 1px dashed black;
+    background-color: #FFF9D9;
+}
+
+.menu-list .href2 {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: 'New Tegomin', serif;
+    font-size: 20px;
+}
+
+.menu-list .href2:hover {
+    color: #D5758A;
+}
+
+.menu-list .href2:active {
+    color: #D5758A;
+    font-weight: bold;
+}
+
+input:checked+.menu-list {
+    max-height: 440px;
+}
+
+@media screen and (max-width: 1024px) {
+    .drop-menu{
+        display: block;
+    }
+}
+
+
+// section2+3+4
+@media screen and (max-width : 1470px) {
+    #section2 {
+        max-height: 827px;
+
+        .timelist {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10%;
+            z-index: 4;
+            gap: 8px;
+
+            span {
+                width: 250px;
+                display: inline-block;
+                color: #fff;
+                font-family: 微軟正黑體;
+                line-height: 29px;
+                font-weight: bold;
+                font-size: 16px;
+                text-shadow: 3px 3px 2px rgba(#000000, 0.5);
+                background-color: rgba(#000000, 0.8);
+                padding: 8px;
+            }
+
+            .timeshow {
+                background-color: rgba(#eca23b, 0.8);
+            }
+        }
+
+        .description {
+            width: 100%;
+            height: 200px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 4;
+            background-color: rgba(#1F1E2B, 0.8);
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 0;
+        }
+
+        .time-circle {
+            display: none;
+        }
+
+        .fixed-img {
+            display: none;
+        }
+
+    }
+    footer {
+        height: 650px;
+        .wavefooter3 {
+            z-index: 1;
+            #wavefooter1{
+                display: none;
+            }
+            #wavefooter2{
+                display: block;
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            }
+        }
+
+        #footerContent {
+            flex-direction: column-reverse;
+            padding: 0px;
+            .logo-white {
+                display: block;
+                position: absolute;
+                width: 148px;
+                height: 100%;
+                top: -425px;
+                transform: translateX(-42%);
+                
+            }
+        }
+            #footerInformation {
+                margin: 0 auto;
+            }
+
+
+            #footerDescription {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #fff;
+                // margin-bottom: 99px;
+            }
+
+            #copyright {
+                color: #fff;
+                margin: 0px auto;
+            }
+
+            #map {
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+
+        #footerLogo {
+            display: none;
+        }
+
+        
+}
+
+@media screen and (max-width : 1024px) {
+    #section2 {
+        max-height: 576px;
+    }
+
+    #section3 {
+        #section3CardArea {
+            .section3Cards:nth-child(odd) {
+                padding-top: 0px;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width : 768px) {
+    #section2 {
+        max-height: 468px;
+
+        .timelist {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10%;
+            z-index: 4;
+            gap: 8px;
+
+            span {
+                width: 250px;
+                display: inline-block;
+                color: #fff;
+                font-family: 微軟正黑體;
+                line-height: 29px;
+                font-weight: bold;
+                font-size: 16px;
+                text-shadow: 3px 3px 2px rgba(#000000, 0.5);
+                background-color: rgba(#000000, 0.8);
+                padding: 8px;
+            }
+
+            .timeshow {
+                background-color: rgba(#eca23b, 0.8);
+            }
+        }
+
+        .description {
+            width: 100%;
+            height: 120px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 4;
+            background-color: rgba(#1F1E2B, 0.8);
+            font-size: 12px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 0;
+        }
+
+        .time-circle {
+            display: none;
+        }
+
+        .fixed-img {
+            display: none;
+        }
+
+    }
+
+}

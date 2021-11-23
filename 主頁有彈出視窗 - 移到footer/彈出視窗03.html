@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/glide.min.js"></script>
+
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./css/彈出視窗.css">
+</head>
+<body>
+  <!-- 彈出視窗 -->
+  <div id="modal-03">
+    <div class="top"></div>
+    
+    <div id="btn-close-modal" class="close-modal-03 closeButton">
+      <a href="./index.html#section3">
+        <img src="./圖片/section3/彈出視窗/close-btn.png" alt="">
+      </a>
+    </div>
+    <div class="modal-content cardPage">
+      <div class="waveout3">
+        <svg viewBox="0 0 120 100">
+          <defs>
+            <path id="waveout"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 100 h -240 z" />
+            <linearGradient x1="0.5" y1="0.5" x2="1" y2="0.5" id="lineGradient" spreadMethod="repeat">
+              <stop offset="0%" stop-color="#90F0FC" />
+              <stop offset="50%" stop-color="#FFF9D9" />
+              <stop offset="100%" stop-color="#90F0FC" />
+            </linearGradient>
+          </defs>
+          <use id="waveout1" class="waveout" xlink:href="#waveout" x="0" y="0"></use>
+        </svg>
+      </div>
+      <div class="contain">
+        <div class="spotbox">
+          <div class="spotImg">
+            <div class="post">
+            </div>
+          </div>
+          <div class="spotName">許家花枝燒</div>
+        </div>
+        <!-- 輪播 -->
+        <div class="swiper">
+          <div class="images glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/03-許家花枝燒/1.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/03-許家花枝燒/2.jpg" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="./圖片/section3/彈出視窗/輪播區塊圖片/03-許家花枝燒/3.jpg" alt="">
+                </li>
+
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                  class="fas fa-arrow-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                  class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="spotText">
+          <div class="spotDescript">
+            <h1>店家介紹</h1>
+            <span>電視節目強力推薦的許家花枝燒，人絡繹不絕的真的生意很不錯。花枝燒加上柴魚和美乃滋，吃起來滿像章魚燒的味道，如果敢吃辣的可以加點芥茉醬，又大塊又厚又嫩口，現點現炸的味道都還不錯喔 </span>
+          </div>
+          <div class="spotContact">
+            <h1>店家資訊</h1>
+            <span>電話：0932-916110</br>
+              時間：平日:10:15-19:30 假日:10:00-21:00</br>
+              地址：新北市八里區米倉村渡船頭街19號前</br>
+              <a href="https://www.facebook.com/八里許家花枝燒-231699606893399/">粉絲團</a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+      new Glide(".images", {
+          type: 'carousel',
+          perView: 3,
+          focusAt: 'center',
+          gap: 40,
+      }).mount()
+  </script>
+</body>
+
+</html>
+  
